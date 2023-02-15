@@ -7,16 +7,19 @@ import {Navbar, Sidebar} from "./componets";
 import {
     Area,
     Bar,
-    Calender, ColorMapping,
-    ColorPicker,
+    Calender,
+    ColorMapping,
     Customers,
     Ecommerce,
     Editor,
-    Employees, Financial,
+    Employees,
+    Financial,
     Kanban,
     Line,
     Order,
-    Pie, Pyramid, Stacked
+    Pie,
+    Pyramid,
+    Stacked
 } from "./pages";
 import {useStateContext} from "./contexts/ContextProvider";
 
@@ -66,7 +69,6 @@ const App = () => {
                                 <Route path="/kanban" element={<Kanban/>}/>
                                 <Route path="/editor" element={<Editor/>}/>
                                 <Route path="/calendar" element={<Calender/>}/>
-                                <Route path="/color-picker" element={<ColorPicker/>}/>
 
                                 {/*Charts*/}
                                 <Route path="/line" element={<Line/>}/>
