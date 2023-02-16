@@ -7,13 +7,12 @@ import {
   AiOutlineStock
 } from 'react-icons/ai';
 import {FiBarChart, FiCreditCard, FiEdit, FiPieChart, FiShoppingBag, FiShoppingCart, FiStar} from 'react-icons/fi';
-import {BsBarChart, BsBoxSeam, BsChatLeft, BsCurrencyDollar, BsKanban, BsShield} from 'react-icons/bs';
+import { BsBoxSeam, BsChatLeft, BsCurrencyDollar, BsKanban, BsShield} from 'react-icons/bs';
 import {IoMdContacts} from 'react-icons/io';
-import {RiContactsLine, RiStockLine} from 'react-icons/ri';
+import {RiContactsLine} from 'react-icons/ri';
 import {MdOutlineSupervisorAccount} from 'react-icons/md';
 import {HiOutlineRefresh} from 'react-icons/hi';
 import {TiTick} from 'react-icons/ti';
-import {GiLouvrePyramid} from 'react-icons/gi';
 import {GrLocation} from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -450,14 +449,14 @@ export const customersGrid = [
     {
         field: 'Weeks',
         headerText: 'Weeks',
-        width: '100',
+        width: '95',
         format: 'C2',
         textAlign: 'Center'
     },
     {
         field: 'Budget',
         headerText: 'Budget',
-        width: '100',
+        width: '95',
         format: 'yMd',
         textAlign: 'Center'
     },
@@ -465,7 +464,7 @@ export const customersGrid = [
     {
         field: 'Location',
         headerText: 'Location',
-        width: '150',
+        width: '120',
         textAlign: 'Center'
     },
 
@@ -593,18 +592,6 @@ export const links = [
                 icon: <FiPieChart/>,
             },
             {
-                name: 'financial',
-                icon: <RiStockLine/>,
-            },
-            {
-                name: 'color-mapping',
-                icon: <BsBarChart/>,
-            },
-            {
-                name: 'pyramid',
-                icon: <GiLouvrePyramid/>,
-            },
-            {
                 name: 'stacked',
                 icon: <AiOutlineBarChart/>,
             },
@@ -657,13 +644,6 @@ export const chatData = [
         message: 'New Payment received',
         desc: 'Check your earnings',
         time: '4:39 AM',
-    },
-    {
-        image:
-        avatar,
-        message: 'Jolly completed tasks',
-        desc: 'Assign her new tasks',
-        time: '1:12 AM',
     },
 ];
 
@@ -907,13 +887,6 @@ export const userProfileData = [
         desc: 'Account Settings',
         iconColor: '#03C9D7',
         iconBg: '#E5FAFB',
-    },
-    {
-        icon: <BsShield/>,
-        title: 'My Inbox',
-        desc: 'Messages & Emails',
-        iconColor: 'rgb(0, 194, 146)',
-        iconBg: 'rgb(235, 250, 242)',
     },
     {
         icon: <FiCreditCard/>,
@@ -2909,189 +2882,14 @@ export const scheduleData = [
         CategoryColor: '#1aaa55',
     },
     {
-        Id: 2,
-        Subject: 'Thule Air Crash Report',
-        Location: 'Newyork City',
-        StartTime: '2021-01-11T06:30:00.000Z',
-        EndTime: '2021-01-11T08:30:00.000Z',
-        CategoryColor: '#357cd2',
-    },
-    {
-        Id: 3,
-        Subject: 'Blue Moon Eclipse',
+        Id: 1,
+        Subject: 'Explosion of Betelgeuse Star',
         Location: 'Space Center USA',
-        StartTime: '2021-01-12T04:00:00.000Z',
-        EndTime: '2021-01-12T05:30:00.000Z',
-        CategoryColor: '#7fa900',
-    },
-    {
-        Id: 4,
-        Subject: 'Meteor Showers in 2021',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-13T07:30:00.000Z',
-        EndTime: '2021-01-13T09:00:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 5,
-        Subject: 'Milky Way as Melting pot',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-14T06:30:00.000Z',
-        EndTime: '2021-01-14T08:30:00.000Z',
-        CategoryColor: '#00bdae',
-    },
-    {
-        Id: 6,
-        Subject: 'Mysteries of Bermuda Triangle',
-        Location: 'Bermuda',
-        StartTime: '2021-01-14T04:00:00.000Z',
-        EndTime: '2021-01-14T05:30:00.000Z',
-        CategoryColor: '#f57f17',
-    },
-    {
-        Id: 7,
-        Subject: 'Glaciers and Snowflakes',
-        Location: 'Himalayas',
-        StartTime: '2021-01-15T05:30:00.000Z',
-        EndTime: '2021-01-15T07:00:00.000Z',
+        StartTime: '2023-02-16T04:00:00.000Z',
+        EndTime: '2023-02-16T05:30:00.000Z',
         CategoryColor: '#1aaa55',
     },
-    {
-        Id: 8,
-        Subject: 'Life on Mars',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-16T03:30:00.000Z',
-        EndTime: '2021-01-16T04:30:00.000Z',
-        CategoryColor: '#357cd2',
-    },
-    {
-        Id: 9,
-        Subject: 'Alien Civilization',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-18T05:30:00.000Z',
-        EndTime: '2021-01-18T07:30:00.000Z',
-        CategoryColor: '#7fa900',
-    },
-    {
-        Id: 10,
-        Subject: 'Wildlife Galleries',
-        Location: 'Africa',
-        StartTime: '2021-01-20T05:30:00.000Z',
-        EndTime: '2021-01-20T07:30:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 11,
-        Subject: 'Best Photography 2021',
-        Location: 'London',
-        StartTime: '2021-01-21T04:00:00.000Z',
-        EndTime: '2021-01-21T05:30:00.000Z',
-        CategoryColor: '#00bdae',
-    },
-    {
-        Id: 12,
-        Subject: 'Smarter Puppies',
-        Location: 'Sweden',
-        StartTime: '2021-01-08T04:30:00.000Z',
-        EndTime: '2021-01-08T06:00:00.000Z',
-        CategoryColor: '#f57f17',
-    },
-    {
-        Id: 13,
-        Subject: 'Myths of Andromeda Galaxy',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-06T05:00:00.000Z',
-        EndTime: '2021-01-06T07:00:00.000Z',
-        CategoryColor: '#1aaa55',
-    },
-    {
-        Id: 14,
-        Subject: 'Aliens vs Humans',
-        Location: 'Research Center of USA',
-        StartTime: '2021-01-05T04:30:00.000Z',
-        EndTime: '2021-01-05T06:00:00.000Z',
-        CategoryColor: '#357cd2',
-    },
-    {
-        Id: 15,
-        Subject: 'Facts of Humming Birds',
-        Location: 'California',
-        StartTime: '2021-01-19T04:00:00.000Z',
-        EndTime: '2021-01-19T05:30:00.000Z',
-        CategoryColor: '#7fa900',
-    },
-    {
-        Id: 16,
-        Subject: 'Sky Gazers',
-        Location: 'Alaska',
-        StartTime: '2021-01-22T05:30:00.000Z',
-        EndTime: '2021-01-22T07:30:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 17,
-        Subject: 'The Cycle of Seasons',
-        Location: 'Research Center of USA',
-        StartTime: '2021-01-11T00:00:00.000Z',
-        EndTime: '2021-01-11T02:00:00.000Z',
-        CategoryColor: '#00bdae',
-    },
-    {
-        Id: 18,
-        Subject: 'Space Galaxies and Planets',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-11T11:30:00.000Z',
-        EndTime: '2021-01-11T13:00:00.000Z',
-        CategoryColor: '#f57f17',
-    },
-    {
-        Id: 19,
-        Subject: 'Lifecycle of Bumblebee',
-        Location: 'San Fransisco',
-        StartTime: '2021-01-14T00:30:00.000Z',
-        EndTime: '2021-01-14T02:00:00.000Z',
-        CategoryColor: '#7fa900',
-    },
-    {
-        Id: 20,
-        Subject: 'Alien Civilization',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-14T10:30:00.000Z',
-        EndTime: '2021-01-14T12:30:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 21,
-        Subject: 'Alien Civilization',
-        Location: 'Space Center USA',
-        StartTime: '2021-01-10T08:30:00.000Z',
-        EndTime: '2021-01-10T10:30:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 22,
-        Subject: 'The Cycle of Seasons',
-        Location: 'Research Center of USA',
-        StartTime: '2021-01-12T09:00:00.000Z',
-        EndTime: '2021-01-12T10:30:00.000Z',
-        CategoryColor: '#00bdae',
-    },
-    {
-        Id: 23,
-        Subject: 'Sky Gazers',
-        Location: 'Greenland',
-        StartTime: '2021-01-15T09:00:00.000Z',
-        EndTime: '2021-01-15T10:30:00.000Z',
-        CategoryColor: '#ea7a57',
-    },
-    {
-        Id: 24,
-        Subject: 'Facts of Humming Birds',
-        Location: 'California',
-        StartTime: '2021-01-16T07:00:00.000Z',
-        EndTime: '2021-01-16T09:00:00.000Z',
-        CategoryColor: '#7fa900',
-    },
+
 ];
 
 export const lineChartData = [

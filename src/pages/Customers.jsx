@@ -1,14 +1,14 @@
 import React from 'react';
 import {Header} from "../componets";
 import {
-  ColumnDirective,
-  ColumnsDirective,
-  GridComponent,
-  Page,
-  Search,
-  Toolbar,
-  Selection,
-  Edit, Sort, Filter
+    ColumnDirective,
+    ColumnsDirective,
+    GridComponent,
+    Page,
+    Search,
+    Toolbar,
+    Selection,
+    Edit, Sort, Filter, Resize
 } from "@syncfusion/ej2-react-grids";
 import {customersData, customersGrid} from "../data/dummy";
 import {Inject} from "@syncfusion/ej2-react-richtexteditor";
@@ -22,7 +22,7 @@ const Customers = () => {
             allowPaging
             allowSorting
             width="auto"
-            toolbar={['Delete', 'Update', 'Cancel']}
+            toolbar={['Delete']}
             editSettings={{allowEditing: true, allowAdding: true, allowDeleting: true}}
         >
           <ColumnsDirective>
@@ -30,7 +30,7 @@ const Customers = () => {
                 <ColumnDirective key={index} {...item}/>
             ))}
           </ColumnsDirective>
-          <Inject services={[ Page, Search, Toolbar, Selection, Edit, Sort, Filter ]} />
+          <Inject services={[ Page, Search, Toolbar, Selection, Edit, Sort, Filter, Resize ]} />
         </GridComponent>
       </div>
   )

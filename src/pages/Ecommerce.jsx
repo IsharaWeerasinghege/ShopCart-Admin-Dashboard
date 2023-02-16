@@ -1,10 +1,11 @@
 import React from 'react';
 import {earningData, SparklineAreaData} from '../data/dummy'
-import {Button, SparkLine} from "../componets";
+import {Button, SparkLine, Stacked} from "../componets";
 import {GoPrimitiveDot} from "react-icons/go";
-import {Stacked} from "./index";
+import {useStateContext} from "../contexts/ContextProvider";
 
 const Ecommerce = () => {
+    const {currentColor} = useStateContext();
     return (<div className="mt-12">
 
             <div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -17,7 +18,7 @@ const Ecommerce = () => {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <Button color="white" bgColor="blue" text="Download" borderRadius="10px" size="md"/>
+                        <Button color='white' bgColor={currentColor} text="Download" borderRadius="10px" size="md"/>
                     </div>
                 </div>
                 <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
@@ -48,11 +49,11 @@ const Ecommerce = () => {
             </div>
 
             <div className="flex gap-10 flex-wrap justify-center">
-                <div>
-                    <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-780 p-4 m-3">
+                <div className="w-full mx-auto p-2">
+                    <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-[750px] mx-auto p-4 m-3">
                         <div className="flex justify-between items-center">
-                            <p className="text-xl font-semibold">Revenue Update</p>
-                            <div className="flex gap-4 items-center">
+                            <p className="text-lg font-semibold ">Revenue Update</p>
+                            <div className="flex gap-4 items-center flex-wrap">
                                 <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                                     <span>
                                         <GoPrimitiveDot/>
@@ -86,14 +87,14 @@ const Ecommerce = () => {
                                 <div className="mt-10">
                                     <Button
                                         color="white"
-                                        bgColor={'blue'}
+                                        bgColor={currentColor}
                                         text="Download Report"
                                         borderRadius="10px"
                                     />
                                 </div>
                             </div>
                             <div>
-                                <Stacked width="320px" height="360px" />
+                                <Stacked width="300px" height="360px" />
                             </div>
                         </div>
                     </div>
